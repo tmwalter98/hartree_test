@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hartree-test"
+version = "0.1.0"
+description = ""
+authors = ["Timothy Walter"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+apache-beam = {extras = ["interactive"], version = "^2.51.0"}
+
+[tool.poetry.group.dev.dependencies]
+black = "23.9.1"
+ipykernel = "^6.25.2"
+notebook = "^7.0.5"
+nbconvert = "^7.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
